@@ -1,16 +1,86 @@
 import { Head } from 'mdx-deck'
+import { Appear } from 'mdx-deck'
+
+import {
+  Image,
+} from '@mdx-deck/components'
+
+
+import Grid from './Grid'
+import ProgressiveX from './ProgressiveX'
 
 export { dark as theme } from 'mdx-deck/themes'
+import "./index.css";
 
 <Head>
   <title>Introduction to PWA</title>
 </Head>
 
-# Introduction to Progressive Web Apps
+## Introduction to Progressive Web Apps
 
 ---
 
-## On Mobile 📱
+## On Mobile / Tablet 📱
+
+---
+
+### Android Chrome
+
+---
+
+<Grid>
+  <img src="./images/android1.png" />
+  <img src="./images/android2.png" />
+  <img src="./images/android3.png" />
+</Grid>
+
+---
+
+<Grid>
+  <img src="./images/android4.png" />
+  <img src="./images/android5.png" />
+  <img src="./images/android6.png" />
+</Grid>
+
+---
+
+<Grid>
+  <img src="./images/android9.png" />
+  <img src="./images/android10.png" />
+  <img src="./images/android12.png" />
+  <img src="./images/android11.png" />
+</Grid>
+
+---
+
+### Android Firefox and Edge
+
+---
+
+<Grid>
+  <img src="./images/other1.png" />
+  <img src="./images/other2.png" />
+  <img src="./images/other3.png" />
+</Grid>
+
+---
+
+### iOS Safari
+
+---
+
+<Grid>
+  <img src="./images/ios1.jpg" />
+  <img src="./images/ios2.jpg" />
+  <img src="./images/ios3.jpg" />
+</Grid>
+
+---
+
+<Grid>
+  <img src="./images/ios4.jpg" />
+  <img src="./images/ios5.jpg" />
+</Grid>
 
 ---
 
@@ -18,19 +88,122 @@ export { dark as theme } from 'mdx-deck/themes'
 
 ---
 
-## Prompt❗
+### Mac OS
+
+---
+
+<Image size="contain" src="./images/macos1.png" />
+
+---
+
+<Image size="contain" src="./images/macos2.png" />
+
+---
+
+<Image size="contain" src="./images/macos3.png" />
+
+---
+
+<Image size="contain" src="./images/macos4.png" />
+
+---
+
+### Chrome OS
+
+---
+<Image size="contain" src="./images/chromeos1.png" />
+
+---
+
+<Image size="contain" src="./images/chromeos2.png" />
+
+---
+
+<Image size="contain" src="./images/chromeos3.png" />
+
+---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IKSZYbfiz1Q?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+### Windows 10
+
+---
+
+<h3>So what's a Progressive Web App? 🤔</h3>
+<ul>
+  <Appear>
+    <li>It's a responsive <strong>website</strong></li>
+    <li>It's supposed to be fast</li>
+    <li>You can install it / add it to your homescreen</li>
+    <li>It has a splashscreen</li>
+    <li>It can work Offline</li>
+    <li>It can have its own fullscreen window</li>
+    <li>And more...</li>
+  </Appear>
+</ul>
+
+---
+
+## The term "Progressive Web App" sucks 👎
+
+---
+
+## Anything can be "progressive"
+
+---
+
+<ProgressiveX />
 
 ---
 
 ## Requirements ☑️
 
+* [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
+* [Checklist](https://developers.google.com/web/progressive-web-apps/checklist)
+
+---
+
+### Service Worker isn't just for offline
+
 ---
 
 ## Build yours 🏗️
 
+* [PWABuider](https://www.pwabuilder.com/), by Microsoft
+* [Workbox](https://developers.google.com/web/tools/workbox/) for Service Worker
+* [Progressive React](https://houssein.me/progressive-react), tips and best practices
+
+---
+
+### ⚛️
+
+* [create-react-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* [gatsby](https://www.gatsbyjs.org/docs/add-offline-support-with-a-service-worker/)
+* [next.js](https://nextjs.org/features/progressive-web-apps)
+* [ionic](https://ionicframework.com/pwa)
+
+---
+
+### Apple has its own metatags
+
+### Be careful when using fullscreen
+
+---
+
+## When and Why? 🤷‍♂️
+
 ---
 
 ## Showcase 🔗
+
+---
+
+* [A Tinder Progressive Web App Performance Case Study](https://medium.com/@addyosmani/a-tinder-progressive-web-app-performance-case-study-78919d98ece0)
+* [A Pinterest Progressive Web App Performance Case Study](https://medium.com/dev-channel/a-pinterest-progressive-web-app-performance-case-study-3bd6ed2e6154)
+* [Twitter Lite and High Performance React Progressive Web Apps at Scale](https://medium.com/@paularmstrong/twitter-lite-and-high-performance-react-progressive-web-apps-at-scale-d28a00e780a3)
+* [Mobify](https://www.mobify.com/)
 
 ---
 
