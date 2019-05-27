@@ -10,6 +10,7 @@ const ProgressiveX = () => (
       <span>Blog</span>
       <span>Portfolio</span>
       <span>Store</span>
+      <span>Web App</span>
     </span>
   </h2>
 );

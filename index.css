@@ -39,36 +39,48 @@
   grid-template-rows: repeat(6, 1fr);
   grid-row-gap: var(--row-gap);
   text-align: left;
-  animation: slide 6s infinite;
+  animation: slide 7s infinite;
+  animation-delay: 2s;
+  transform: translateY(calc(50% - var(--word-size) / 2));
 }
 
 @keyframes slide {
   0% {
     transform: translateY(calc(50% - var(--word-size) / 2));
   }
-  16.66% {
+  14.28% {
     transform: translateY(
       calc(50% - var(--word-size) / 2 - (var(--word-size) + var(--row-gap)) * 1)
     );
   }
-  33.33% {
+  28.57% {
     transform: translateY(
       calc(50% - var(--word-size) / 2 - (var(--word-size) + var(--row-gap)) * 2)
     );
   }
-  50% {
+  42.85% {
     transform: translateY(
       calc(50% - var(--word-size) / 2 - (var(--word-size) + var(--row-gap)) * 3)
     );
   }
-  66.66% {
+  57.14% {
     transform: translateY(
       calc(50% - var(--word-size) / 2 - (var(--word-size) + var(--row-gap)) * 4)
     );
   }
-  83.33% {
+  71.42% {
     transform: translateY(
       calc(50% - var(--word-size) / 2 - (var(--word-size) + var(--row-gap)) * 5)
+    );
+  }
+  85.71% {
+    transform: translateY(
+      calc(50% - var(--word-size) / 2 - (var(--word-size) + var(--row-gap)) * 5)
+    );
+  }
+  99.9999% {
+    transform: translateY(
+      calc(50% - var(--word-size) / 2 - (var(--word-size) + var(--row-gap)) * 6)
     );
   }
   100% {
