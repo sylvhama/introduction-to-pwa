@@ -29,9 +29,11 @@ import "./index.css";
 ---
 
 <Grid>
-  <img src={require("file-loader!./images/android1.png")} />
-  <img src={require("file-loader!./images/android2.png")} />
-  <img src={require("file-loader!./images/android3.png")} />
+  <Appear>
+    <img src={require("file-loader!./images/android1.png")} />
+    <img src={require("file-loader!./images/android2.png")} />
+    <img src={require("file-loader!./images/android3.png")} />
+  </Appear>
 </Grid>
 
 ---
@@ -139,7 +141,7 @@ import "./index.css";
     <li>You can install it / add it to your homescreen</li>
     <li>It has a splashscreen</li>
     <li>It can work Offline</li>
-    <li>It can run in its own fullscreen window</li>
+    <li>It can have its own fullscreen window</li>
     <li>And more...</li>
   </Appear>
 </ul>
@@ -173,10 +175,6 @@ import "./index.css";
 
 ---
 
-### Service Worker isn't just for offline
-
----
-
 ## Build yours 🏗️
 
 * [PWABuider](https://www.pwabuilder.com/), by Microsoft
@@ -194,9 +192,10 @@ import "./index.css";
 
 ---
 
-### Apple has its own metatags
-
-### Be careful when using fullscreen
+### ⚠️
+* Apple has its own metatags
+* Be careful when using fullscreen
+* SW can be dangerous
 
 ---
 
